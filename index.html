@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Resume OS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/dcon.js"></script>
+</head>
+<body>
+
+
+<div class="desktop" id="desktop">
+    <div class="deskobject" id="aboutme">
+        <img src="img/aboutme.png" class="deskicon" alt="aboutme">
+        <img src="img/aboutmebig.png" class="deskiconbig" alt="aboutme">
+        <p>About Me</p>
+    </div>
+    <div class="deskobject" id="resume">
+        <img src="img/resume.png" class="deskicon" alt="resume">
+        <img src="img/resumebig.png" class="deskiconbig" alt="resume">
+        <p>Résumé</p>
+    </div>
+    <div class="deskobject" id="projectfolder">
+        <img src="img/folder.png" class="deskicon" alt="projectfolder">
+        <img src="img/folderbig.png" class="deskiconbig" alt="projectfolder">
+        <p>Projects</p>
+    </div>
+    <div class="deskobject" id="email">
+        <img src="img/email.png" class="deskicon" alt="email">
+        <img src="img/emailbig.png" class="deskiconbig" alt="email">
+        <p>Email</p>
+    </div>
+    <div class="deskobject" id="github">
+        <img src="img/github.png" class="deskicon" alt="github">
+        <img src="img/githubbig.png" class="deskiconbig" alt="github">
+        <p>GitHub</p>
+    </div>
+</div>
+
+
+<!-- About Me Window -->
+<div class="window hidden" id="personalinfo">
+  <header>
+    <h1><img class="windowicon" src="img/charwin.png" alt="faceicon"><img class="largewindowicon" src="img/charwinbig.png" alt="faceicon">About Me<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+  </header>
+  <div class="windowcontents">
+    <div class="portrait">
+      <img id="me" src="img/me.png" alt="pixelportrait">
+      <img id="mesquished" src="img/mesquished.png" alt="pixelportraitsquished">
+      <img id="me2" src="img/me2.png" alt="bigpixelportrait">
+      <img id="mesquishedbig" src="img/mesquishedbig.png" alt="bigpixelportraitsquished">
+    </div>
+      <table>
+          <tr>
+              <td class="rowhead">Name:</td>
+              <td>Daniel Conquit</td>
+          </tr>
+          <tr>
+              <td class="rowhead">Languages:</td>
+              <td>Java, Python, HTML5, CSS, JavaScript, JQuery, PHP, C</td>
+          </tr>
+          <tr>
+              <td class="rowhead">About Me:</td>
+              <td>I am a Sydney-based Computer Science student, studying through The University of
+                  New England. I am looking to make a transition to a career in software development.</td>
+          </tr>
+      </table>
+  </div>
+</div>
+
+
+
+<!-- Resume Window -->
+<div class="window hidden" id="resumeexplorer">
+    <header>
+        <h1><img class="windowicon" src="img/log.png" alt="resumeicon"><img class="largewindowicon" src="img/logbig.png" alt="resumeiconbig">Resume<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+    </header>
+    <div class="windowcontents">
+        <div class="textbox">
+            <h1>Daniel Conquit</h1>
+            <hr>
+            <h2>Employment History</h2>
+            <h3>Woolworths Katoomba</h3>
+            <p class="resumeitem">Customer Service Team Member <span class="date">2017 - Present</span></p>
+            <p>As a customer service team member my duties include assisting customers with their purchases,
+                cash handling, replenishing front-end stock, monitoring the self-serve checkouts, and closing
+                the store for the night.
+                Occasional duties include assisting in other departments (grocery/nightfill).</p>
+            <h3>Lapstone Hotel</h3>
+            <p class="resumeitem">Cook/Kitchenhand <span class="date">2014 - 2016</span></p>
+            <p>In my role at the Lapstone hotel I was responsible for food preparation, cooking and cleaning.</p>
+            <hr>
+            <h2>Education</h2>
+            <h3>University of New England</h3>
+            <p class="resumeitem">Bachelor of Computer Science <span class="date">2018 - Present</span></p>
+            <p>Studying as an external student. Majoring in Software Development. Planned finish date mid-2021.</p>
+            <p class="resumeitem">Bachelor of Psychological Science <span class="date">2015 - 2017</span></p>
+            <p>Transferred to Bachelor of Computer Science.</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Projects Window -->
+<div class="window hidden" id="projectswindow">
+    <header>
+        <h1><img class="windowicon" src="img/log.png" alt="projectsicon"><img class="largewindowicon" src="img/logbig.png" alt="projectsiconbig">Projects<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+    </header>
+    <div class="windowcontents">
+        <div class="textbox">
+            <h1>Daniel Conquit</h1>
+            <hr>
+            <h2>Employment History</h2>
+            <h3>Woolworths Katoomba</h3>
+            <p class="resumeitem">Customer Service Team Member <span class="date">2017 - Present</span></p>
+            <p>As a customer service team member my duties include assisting customers with their purchases,
+                cash handling, replenishing front-end stock, monitoring the self-serve checkouts, and closing
+                the store for the night.
+                Occasional duties include assisting in other departments (grocery/nightfill).</p>
+            <h3>Lapstone Hotel</h3>
+            <p class="resumeitem">Cook/Kitchenhand <span class="date">2014 - 2016</span></p>
+            <p>In my role at the Lapstone hotel I was responsible for food preparation, cooking and cleaning.</p>
+            <hr>
+            <h2>Education</h2>
+            <h3>University of New England</h3>
+            <p class="resumeitem">Bachelor of Computer Science <span class="date">2018 - Present</span></p>
+            <p>Studying as an external student. Majoring in Software Development. Planned finish date mid-2021.</p>
+            <p class="resumeitem">Bachelor of Psychological Science <span class="date">2015 - 2017</span></p>
+            <p>Transferred to Bachelor of Computer Science.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="menubar">
+    <p>Start</p>
+</div>
+</body>
+</html>

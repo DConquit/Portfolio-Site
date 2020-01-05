@@ -1,0 +1,461 @@
+
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #239063;
+    min-height: 100%;
+    height: 100%;
+}
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+h1 {
+    text-align: left;
+    font-size: 1.2em;
+}
+h2 {
+    font-size: 1em;
+    text-align: center;
+}
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+.subheading {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*
+ * === DESKTOP CONTAINER ===
+ */
+
+.deskobject {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 64px;
+    align-content: center;
+    text-align: center;
+}
+
+deskicon {
+    padding-left: 8x;
+    cursor: pointer;
+}
+
+.deskobject p {
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #239063;
+    cursor: pointer;
+}
+
+
+.deskobject:hover p {
+    border-width: 1px;
+    border-style: dotted;
+    border-color: white;
+}
+
+.deskiconbig {
+    display: none;
+}
+
+
+
+
+/*
+ * === WINDOW CONTAINER ===
+ */
+.window {
+    margin-top: 16px;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+    margin-bottom: 1.25%;
+    background-color: #cbc6c1;
+    border-right: 2px solid #2e222f;
+    border-bottom: 2px solid #2e222f;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    font-size: 1em;
+    padding: 2px;
+    padding-top: 2px;
+    min-height: 96px;
+    min-width: 250px;
+    height: 100%;
+}
+/* Window header bar */
+header {
+    background-color: #625565;
+    color: white;
+    margin: 0px;
+    margin-bottom: 8px;
+    height: 20px;
+}
+/* Highlights the header bar of the window the mouse is hovering over */
+.window:hover header {
+    background-color: #0b8a8f;
+}
+/* Window control icons */
+header img {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+.windowcontrol {
+    padding-top: 2px;
+}
+/* Disables large window control icons when resolution is too low */
+.largewindowcontrol {
+    display: none;
+}
+/* Window application icon */
+.windowicon {
+    float: left;
+    margin-right: 2px;
+    vertical-align: middle;
+    padding-top: 2px;
+}
+/* Disables large window application icons when resolution is too low */
+.largewindowicon {
+    display: none;
+}
+/* Container for the contents of a window */
+.windowcontents {
+    padding: 2px;
+    height: 100%;
+
+}
+
+
+
+/*
+ * === WINDOW - PERSONAL INFO ===
+ */
+
+#personalinfo {
+    max-width: 60%;
+}
+.portrait {
+    float: left;
+    border-right: 1px solid #2e222f;
+    border-bottom: 1px solid #2e222f;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 64px;
+}
+/* Face graphic */
+#me {
+    display: block;
+    /* Squished face graphic. Should only display when face is clicked */
+}
+#mesquished {
+    display: none;
+}
+/* Big portrait. Disabled when resolution is low */
+#me2 {
+    display: none;
+}
+/* Big squished face graphic. Should only display when face is clicked and
+   screen is large*/
+#mesquishedbig {
+    display: none;
+}
+.portrait:hover {
+    background-color: #d9d7d5;
+}
+/* Makes portrait button look depressed when clicked */
+.portrait:active {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid #2e222f;
+    border-left: 1px solid #2e222f;
+}
+/* Removes regular portrait picture when portrait is clicked */
+.portrait:active #me {
+    display: none;
+}
+/* Displays squished portrait picture when portrait is clicked */
+.portrait:active #mesquished {
+    display: block;
+}
+
+.windowcontents p span {
+    font-weight: bold;
+}
+
+td {
+    padding: 4px 8px 4px 8px;
+}
+
+.rowhead {
+    font-weight: bold;
+}
+
+
+
+/*
+ * === WINDOW - RESUME EXPLORER ===
+ */
+
+/* Menu buttons */
+.menuitem {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #2e222f;
+    border-bottom: 1px solid #2e222f;
+    width: 64px;
+    padding: 4px;
+    float:left;
+    margin-left: 0px;
+    margin-right: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #2e222f;
+}
+.menuitem:hover {
+    background-color: #d9d7d5;
+}
+/* Makes the menu button appear depressed when clicked */
+.menuitem:active {
+    border-top: 1px solid #2e222f;
+    border-left: 1px solid #2e222f;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+/* Stops large menu items displaying when resolution is too low */
+.largemenuicon {
+    display: none;
+}
+/* textbox displays resume pages */
+.textbox {
+    background-color: white;
+    border-top: 1px solid #2e222f;
+    border-left: 1px solid #2e222f;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding: 4px 5% 4px 5%;
+    position: relative;
+    /*margin-top: 64px;*/
+    height: 100%;
+    color: #2e222f;;
+
+}
+
+.textbox h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 16px;
+}
+
+.textbox h2 {
+    font-size: 1.3em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.textbox h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.textbox hr {
+    max-width: 50%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #2e222f;
+}
+
+.textbox p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+.resumeitem {
+    font-weight: bold;
+}
+
+.resumeitem .date {
+    float: right;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/*
+ * === Menubar ===
+ */
+.menubar {
+    bottom: 0;
+    position: fixed;
+    height: 32px;
+    width: 100%;
+    background-color: #cbc6c1;
+    border-bottom-color: #2e222f;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: #2e222f;
+    border-width: 1px;
+    border
+}
+
+
+
+
+
+
+/*
+ * === FOR DISPLAYS >= 600px WIDE ===
+ * Arranges windows into two columns
+ */
+@media (min-width: 600px) {
+    .window {
+        float: right;
+        width: 65%;
+        margin-left: 100px;
+        margin-right: 5%;
+    }
+
+    #desktop {
+        float: left;
+        width: 21.25%;
+        margin-right: 1.25%
+    }
+
+
+    /*
+     * === FOR DISPLAYS >= 2000px WIDE ===
+     * Enables high-resolution mode
+     */
+    @media (min-width: 2000px) {
+
+        /* Disable small images */
+        #me, .windowicon, .windowcontrol, .menuicon, .deskicon, .portrait:active #mesquished {
+            display: none;
+        }
+
+        /* Display large images */
+        #me2 {
+            display: block;
+            float: left;
+        }
+        .portrait:active #me2 {
+            display: none;
+        }
+        .portrait:active #mesquishedbig {
+            display: block;
+        }
+        .largewindowicon {
+            display: block;
+            float: left;
+            padding-right: 4px;
+            padding-top: 4px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .largewindowcontrol {
+            display: block;
+            float: right;
+            padding-top: 4px;
+        }
+        .largemenuicon {
+            display: block;
+            padding-left: 25%;
+            padding-right: 50%;
+        }
+        .deskiconbig {
+            display: block;
+            padding-left: 16px;
+        }
+
+        /* Double the size of everything */
+        body {
+            font-size: 2em;
+        }
+        .deskobject {
+            width: 128px;
+        }
+        .deskobject p {
+            border-width: 2px;
+        }
+        .deskobject:hover p {
+            border-width: 2px;
+        }
+
+        .window {
+            margin-top: 32px;
+            margin-left: 1.25%;
+            margin-right: 1.25%;
+            background-color: #cbc6c1;
+            border-right: 4px solid #2e222f;
+            border-bottom: 4px solid #2e222f;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            font-size: 1em;
+            padding: 4px;
+            padding-top: 4px;
+            min-height: 192px;
+        }
+        header {
+            height: 40px;
+            margin-bottom: 16px;
+        }
+        .windowcontents {
+            padding: 4px;
+        }
+        .portrait {
+            border-right: 2px solid #2e222f;
+            border-bottom: 2px solid #2e222f;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            margin-right: 32px;
+            margin-bottom: 32px;
+            width: 128px;
+        }
+        .portrait:active {
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            border-top: 2px solid #2e222f;
+            border-left: 2px solid #2e222f;
+        }
+        .menuitem {
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-right: 2px solid #2e222f;
+            border-bottom: 2px solid #2e222f;
+            width: 128px;
+            text-align: center;
+            padding: 8px;
+            margin-right: 16px;
+        }
+        .menuitem:active {
+            border-top: 2px solid #2e222f;
+            border-left: 2px solid #2e222f;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+        .textbox {
+            border-top: 2px solid #2e222f;
+            border-left: 2px solid #2e222f;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            padding: 16px 5% 16px 5%;
+        }
+
+        .textbox hr {
+            border: 2px solid #2e222f;
+        }
+    }
+}

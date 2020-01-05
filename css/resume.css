@@ -1,0 +1,74 @@
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+  min-height: 100%;
+  margin: 12px;
+}
+h1, h2, h3, h4, ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.3em;
+}
+h2:nth-of-type(2) {
+  margin-top: 16px;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  float: left;
+  margin-bottom: 8px;
+}
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+ul {
+  list-style: circle;
+}
+li {
+  margin-top: 8px;
+  margin-left: 24px;
+  margin-bottom: 8px;
+}
+hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+a:hover {
+  color: lightblue;
+}
+a:visited {
+  color: purple;
+}
+a:visited:hover {
+  color: pink;
+}
+.jobdate, .edudate {
+  font-style: italic;
+  text-align: right;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Doubles the size of text. Intended to line up with high-res mode for
+   index.html/style.css */
+@media (min-width: 560px) {
+  body {
+    font-size: 2em;
+  }
+
+}
