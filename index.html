@@ -15,7 +15,7 @@
 </head>
 <body>
 
-
+<!-- DESKTOP -->
 <div class="desktop" id="desktop">
     <div class="deskobject" id="aboutme">
         <img src="img/aboutme.png" class="deskicon" alt="aboutme">
@@ -47,15 +47,10 @@
         <img src="img/settingsbig.png" class="deskiconbig" alt="settings">
         <p>Settings</p>
     </div>
-    <div class="deskobject" id="meteoroids">
-        <img src="img/meteoroids.png" class="deskicon" alt="meteoroids">
-        <img src="img/meteoroidsbig.png" class="deskiconbig" alt="meteoroids">
-        <p>Meteoroids</p>
-    </div>
 </div>
 
 
-<!-- About Me Window -->
+<!-- ABOUT ME WINDOW -->
 <div class="window hidden" id="personalinfo">
   <header>
     <h1><img class="windowicon" src="img/charwin.png" alt="faceicon"><img class="largewindowicon" src="img/charwinbig.png" alt="faceicon">About Me<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
@@ -83,7 +78,7 @@
           <tr>
               <td class="rowhead">About Me:</td>
               <td>I am a Sydney-based Computer Science student, studying through The University of
-                  New England. I am looking to make a transition to a career in software development.</td>
+                  New England. I am looking to transition into a career in software development.</td>
           </tr>
       </table>
   </div>
@@ -91,7 +86,7 @@
 
 
 
-<!-- Resume Window -->
+<!-- RESUME WINDOW -->
 <div class="window hidden" id="resumeexplorer">
     <header>
         <h1><img class="windowicon" src="img/resumewinicon.png" alt="resumeicon"><img class="largewindowicon" src="img/resumewiniconbig.png" alt="resumeiconbig">Resume<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
@@ -123,17 +118,56 @@
     </div>
 </div>
 
-<!-- Projects Window -->
+<!-- PROJECTS WINDOW -->
 <div class="window hidden" id="projectswindow">
     <header>
-        <h1><img class="windowicon" src="img/log.png" alt="projectsicon"><img class="largewindowicon" src="img/logbig.png" alt="projectsiconbig">Projects<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+        <h1><img class="windowicon" src="img/projectswinicon.png" alt="projectsicon"><img class="largewindowicon" src="img/projectswiniconbig.png" alt="projectsiconbig">Projects<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
     </header>
     <div class="windowcontents">
+        <div class="folderbackground">
+            <div class="projectcontainer">
+                <div class="projectinfo">
+                    <img src="img/meteorscreenshot.png" alt="meteorscreenshot" class="projectscreenshot">
+                    <table class="projectdesc">
+                        <tr>
+                            <td class="rowhead">Title:</td>
+                            <td>Meteoroids</td>
+                        </tr>
+                        <tr>
+                            <td class="rowhead">Author(s):</td>
+                            <td>Daniel Conquit, Alice Schofield</td>
+                        </tr>
+                        <tr>
+                            <td class="rowhead">Technologies:</td>
+                            <td>Processing, Processing.js (Web Version)</td>
+                        </tr>
+                        <tr>
+                            <td class="rowhead">Description:</td>
+                            <td>A clone of the classic game Asteroids. Developed using Processing for a university group
+                                assigment. The web conversion was made using Processing.js</td>
+                        </tr>
 
+                    </table>
+                </div>
+                <div class="projectcontents">
+                    <div class="folderobject" id="meteoroids">
+                        <img src="img/meteoroids.png" class="deskicon" alt="meteoroids">
+                        <img src="img/meteoroidsbig.png" class="deskiconbig" alt="meteoroids">
+                        <p>Meteoroids</p>
+                    </div>
+                    <div class="folderobject" id="meteorsource">
+                        <img src="img/sourcecode.png" class="deskicon" alt="meteorsource">
+                        <img src="img/sourcecodebig.png" class="deskiconbig" alt="meteorsource">
+                        <p>Source Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- About Me Window -->
+
+<!-- SETTINGS WINDOW -->
 <div class="window hidden" id="settingswindow">
     <header>
         <h1><img class="windowicon" src="img/settingswinicon.png" alt="settingsicon"><img class="largewindowicon" src="img/settingswiniconbig.png" alt="settingsicon">Settings<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
@@ -141,7 +175,7 @@
 </div>
 
 
-<!-- Meteoroids Window -->
+<!-- METEOROIDS WINDOW -->
 <div class="window hidden" id="meteoroidswindow">
     <header>
         <h1><img class="windowicon" src="img/meteorwinicon.png" alt="meteorwinicon"><img class="largewindowicon" src="img/meteorwiniconbig.png" alt="meteorwinicon">Meteoroids<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>

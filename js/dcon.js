@@ -41,6 +41,12 @@ $(document).ready(function() {
         $(".deskobject p").css("border-color", "#7a3045");
         $("#meteoroids p").css("border-color", "white");
     })
+    $("#meteorsource").click( function() {
+        window.open("https://github.com/DConquit/Meteoroids");
+        $(".deskobject p").css("border-color", "#7a3045");
+        $(".folderobject p").css("border-color", "white");
+        $("#meteorsource p").css("border-color", "#2e222f");
+    })
 
 })
 

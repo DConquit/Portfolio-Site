@@ -37,6 +37,7 @@ h3 {
  * === DESKTOP CONTAINER ===
  */
 
+
 .deskobject {
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
@@ -50,6 +51,10 @@ h3 {
 }
 
 .deskicon {
+    padding-left: 4px;
+    cursor: pointer;
+}
+.deskiconbig {
     padding-left: 4px;
     cursor: pointer;
 }
@@ -79,7 +84,7 @@ h3 {
  * === WINDOW CONTAINER ===
  */
 .window {
-    margin: 16px 1.25% 1.25%;
+    margin: 16px 1.25% 1.25% 1.25%;
     background-color: #cbc6c1;
     border-right: 2px solid #2e222f;
     border-bottom: 2px solid #2e222f;
@@ -137,11 +142,16 @@ header img {
 
 
 /*
- * === WINDOW - PERSONAL INFO ===
+ * === WINDOW - ABOUT ME ===
  */
 
+
 #personalinfo {
-    max-width: 60%;
+    max-width: 400px;
+    color: #2e222f;
+    float: left;
+    margin-left: 100px;
+    margin-top: 5%;
 }
 .portrait {
     float: left;
@@ -151,6 +161,7 @@ header img {
     border-left: 1px solid white;
     margin-right: 16px;
     margin-bottom: 16px;
+    margin-left: 8px;
     width: 64px;
 }
 /* Face graphic */
@@ -207,6 +218,12 @@ td {
  * === WINDOW - RESUME EXPLORER ===
  */
 
+#resumeexplorer {
+    float: left;
+    margin-left: 15%;
+
+}
+
 /* Grey Background */
 .greybackground {
     background-color: #625565;
@@ -248,8 +265,8 @@ td {
     background-color: white;
     border-top: 1px solid #2e222f;
     border-left: 1px solid #2e222f;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
+    border-bottom: 1px solid #c7dcd0;
+    border-right: 1px solid #c7dcd0;
     padding: 4px 5% 4px 5%;
     position: relative;
     /*margin-top: 64px;*/
@@ -295,6 +312,84 @@ td {
     font-weight: normal;
     font-style: italic;
 }
+
+/*
+ * === WINDOW - PROJECTS ===
+ */
+
+#projectswindow {
+    max-width: 500px;
+    float: left;
+    margin-left: 10%;
+}
+
+#projectswindow .windowcontents{
+    padding: 2px;
+}
+
+.folderbackground {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #2e222f;
+    border-left-color: #2e222f;
+    border-right-color: #c7dcd0;
+    border-bottom-color: #c7dcd0;
+    margin: 2px 2px 2px 2px;
+    padding: 1.25%;
+    height: 100%;
+    overflow: auto;
+}
+
+.projectscreenshot {
+    display: block;
+    max-height: 200px;
+    margin: 25px;
+}
+.projectdesc {
+
+}
+
+.projectinfo {
+    float: left;
+    border-right: 1px solid #2e222f;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.projectcontents {
+    float: left;
+    height: 100%;
+}
+
+.projectcontainer {
+    border-bottom-color: #2e222f;
+    border-style: solid;
+    border-width: 1px;
+    overflow: auto;
+}
+
+.folderobject {
+    width: 128px;
+}
+.folderobject p {
+    border-width: 2px;
+}
+.folderobject:hover p {
+    border-width: 2px;
+}
+.folderobject {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #2e222f;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 64px;
+    align-content: center;
+    text-align: center;
+}
+
 
 /*
  * === WINDOW - METEOROIDS ===
@@ -414,6 +509,69 @@ td {
             border-width: 2px;
         }
 
+        #personalinfo {
+            max-width: 800px;
+            margin-left: 200px;
+            margin-top: 5%;
+        }
+
+        #projectswindow {
+            max-width: 1000px;
+            float: left;
+            margin-left: 10%;
+        }
+
+        #projectswindow .windowcontents{
+            padding: 4px;
+        }
+
+        .folderbackground {
+            border-width: 2px;
+            margin: 4px 4px 4px 4px;
+        }
+
+        .projectscreenshot {
+            max-height: 400px;
+            margin: 50px;
+        }
+
+        .projectinfo {
+            border-right: 2px solid #2e222f;
+            min-width: 500px;
+            max-width: 500px;
+        }
+
+        .projectcontainer {
+            border-width: 2px;
+        }
+
+        .folderobject {
+            width: 256px;
+        }
+        .folderobject p {
+            border-width: 4px;
+        }
+        .folderobject:hover p {
+            border-width: 4px;
+        }
+        .folderobject {
+            margin: 32px;
+            width: 128px;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
         .window {
             margin-top: 32px;
             margin-left: 1.25%;
@@ -469,8 +627,8 @@ td {
         .textbox {
             border-top: 2px solid #2e222f;
             border-left: 2px solid #2e222f;
-            border-bottom: 2px solid white;
-            border-right: 2px solid white;
+            border-bottom: 2px solid #c7dcd0;
+            border-right: 2px solid #c7dcd0;
             padding: 16px 5% 16px 5%;
         }
 
@@ -480,6 +638,9 @@ td {
 
         .menubar {
             height: 64px;
+        }
+        .folderbackground {
+            border-width: 2px;
         }
     }
 }
