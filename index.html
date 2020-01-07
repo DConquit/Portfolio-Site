@@ -11,6 +11,7 @@
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/dcon.js"></script>
+    <script type="text/javascript" src="js/processing.min.js"></script>
 </head>
 <body>
 
@@ -40,6 +41,16 @@
         <img src="img/github.png" class="deskicon" alt="github">
         <img src="img/githubbig.png" class="deskiconbig" alt="github">
         <p>GitHub</p>
+    </div>
+    <div class="deskobject" id="settings">
+        <img src="img/settings.png" class="deskicon" alt="settings">
+        <img src="img/settingsbig.png" class="deskiconbig" alt="settings">
+        <p>Settings</p>
+    </div>
+    <div class="deskobject" id="meteoroids">
+        <img src="img/meteoroids.png" class="deskicon" alt="meteoroids">
+        <img src="img/meteoroidsbig.png" class="deskiconbig" alt="meteoroids">
+        <p>Meteoroids</p>
     </div>
 </div>
 
@@ -138,8 +149,29 @@
     </div>
 </div>
 
+<!-- About Me Window -->
+<div class="window hidden" id="settingswindow">
+    <header>
+        <h1><img class="windowicon" src="img/settingswinicon.png" alt="settingsicon"><img class="largewindowicon" src="img/settingswiniconbig.png" alt="settingsicon">Settings<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+    </header>
+</div>
+
+
+<!-- Meteoroids Window -->
+<div class="window hidden" id="meteoroidswindow">
+    <header>
+        <h1><img class="windowicon" src="img/meteorwinicon.png" alt="meteorwinicon"><img class="largewindowicon" src="img/meteorwiniconbig.png" alt="meteorwinicon">Meteoroids<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+    </header>
+    <div class="windowcontents">
+        <canvas data-processing-sources="WebMeteoroids/WebMeteoroids.pde WebMeteoroids/Asteroid.pde WebMeteoroids/Bullet.pde WebMeteoroids/Highscores.pde WebMeteoroids/Scores.pde WebMeteoroids/Ship.pde WebMeteoroids/Shop.pde" ></canvas>
+    </div>
+</div>
+
+
+
 <div class="menubar">
-    <p>Start</p>
+    <img src="img/menu.png" alt="menubutton" class="menuicon">
+    <img src="img/menubig.png" alt="menubutton" class="menuiconbig">
 </div>
 </body>
 </html>
