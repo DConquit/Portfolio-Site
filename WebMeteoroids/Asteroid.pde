@@ -49,10 +49,10 @@ class Asteroid {
    hit:      Asteroid hit counter. 
    
   ****************************************************************************/
- Asteroid(float radius, float x, float y, int hit, ArrayList<Bullet> bullet) {
+ Asteroid(float radius, float astX, float astY, int hit, ArrayList<Bullet> bullet) {
 
     this.radius = radius;
-    this.position = new PVector (x, y);                 //New position vector.
+    this.position = new PVector (astX,astY);                 //New position vector.
     this.hit = hit;
     this.bullet =  bullet;
 
