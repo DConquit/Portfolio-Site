@@ -46,6 +46,7 @@
  
  ******************************************************************************/
 
+/* @pjs font="fonts/PressStart2P-Regular.ttf"; */
 
 Scores score = new Scores();      //Create a scores object.
 HighScore highscore;              //Create a highscores object.
@@ -132,7 +133,7 @@ float[] blueStarY = new float[10];
 void setup() {
   //fullScreen();
   size(800, 800);
-  font = createFont("HyperspaceBold.otf", 40);
+  font = createFont("PressStart2P-Regular", 40);
 
 
   asteroids = new ArrayList<Asteroid>();    //Initiallise asteroid arraylist.
@@ -185,7 +186,7 @@ void setup() {
  
  ******************************************************************************/
 void draw() {
-  levelString = "Level " + nf(level);
+  levelString = "LEVEL " + nf(level);
 
   // Draws the starfield background
   drawBackground();
@@ -302,11 +303,14 @@ void levelUp() {
 
     levelSplashTimer = 120;
     textSize(120);
+    
     text(levelString, width/2, height/2);
     asteroids.clear();
     bullet.clear();
     asteroidCount++;     //Increments the number of asteroids each level.
+    
     addAsteroids(asteroidCount, splitCount);  
+    
     positionPlayers();
   }
 }
@@ -457,7 +461,7 @@ void asteroidsUpdate() {
 
       if (asteroidHit > 1) {
 
-        addAsteroids(2, asteroidHit-1, asteroids.get(i).getPosition());
+        addNewAsteroids(2, asteroidHit-1, asteroids.get(i).getPosition());
       }
       asteroids.remove(i);
     }
@@ -540,7 +544,7 @@ void positionPlayers() {
  
  ******************************************************************************/
 void addAsteroids(int count, int split ) {
-
+  
 
   for (int i = 0; i < count; i++) {
 
@@ -551,7 +555,7 @@ void addAsteroids(int count, int split ) {
 
 /******************************************************************************
  
- Method:      addAsteroids()
+ Method:      addNewAsteroids()
  
  Function:    Method that controls the addition of new asteroids to the game
  
@@ -560,7 +564,7 @@ void addAsteroids(int count, int split ) {
  dead - position of destroyed asteroid.
  
  ******************************************************************************/
-void addAsteroids(int count, int split, PVector dead ) {
+void addNewAsteroids(int count, int split, PVector dead ) {
 
   for (int i = 0; i < count; i++) {
 
@@ -672,15 +676,15 @@ void drawMainMenu() {
   textSize(100);
   fill(255);
   textAlign(CENTER, CENTER);
-  text("Meteoroids", width/2, xInset*2);  
+  text("METEOROIDS", width/2, xInset*2);  
   textSize(32);
-  text("Press 'spacebar' for 1 player mode", width/2, height/2);
-  text("Press '2' for 2 player mode", width/2, height/2 + itemSpacing);
-  text("Press 'C' to view the controls", width/2, height/2 + 2 * itemSpacing);
-  text("Press 'H' to view highscores", width/2, height/2 + 3 * itemSpacing);
-  text("Press 'Esc' to exit game", width/2, height/2 + 4 * itemSpacing);
+  text("PRESS 'SPACEBAR' FOR 1 PLAYER", width/2, height/2);
+  text("PRESS '2' FOR 2 PLAYER", width/2, height/2 + itemSpacing);
+  text("PRESS 'C' TO VIEW CONTROLS", width/2, height/2 + 2 * itemSpacing);
+  text("PRESS 'H' TO VIEW HIGH SCORES", width/2, height/2 + 3 * itemSpacing);
+  text("PRESS 'ESC' TO EXIT GAME", width/2, height/2 + 4 * itemSpacing);
   textSize(24);
-  text("Game by Daniel Conquit and Alice Schofield ", width/2, height-72);
+  text("GAME BY DANIEL CONQUIT AND ALICE SCHOFIELD", width/2, height-72);
 }
 
 /******************************************************************************
@@ -753,7 +757,7 @@ void gameOverScreen() {
 void drawLevelScreen() {
 
   //levelString = String.format("Level %d", level );
-  levelString = "Level " + nf(level);
+  levelString = "LEVEL " + nf(level);
   textSize(120);
   text(levelString, width/2, height/2);
 }
@@ -768,11 +772,11 @@ void drawLevelScreen() {
 void controlScreen() {
   int insetY = 16;
 
-  text("Player 1\nForward: 'W'\nReverse:'S'\nRotate Left'A'\nRotate " +  
-    "Right'D'\nFire:'SPACE'\nShop: 'B'\nPause: 'P'\n" + 
-    "Quit: 'Q'", width/2, height/5+insetY);
-  text("Player 2\nForward: 'UP'\nReverse:'DOWN'\nRotate Left'LEFT'\nRotate " + 
-    "Right'RIGHT'\nFire:'ENTER'", width/2, height-height/6);
+  text("PLAYER 1\nFORWARD: 'W'\nREVERSE:'S'\nROTATE LEFT'A'\nROTATE " +  
+    "RIGHT 'D'\nFIRE: 'SPACE'\nSHOP: 'B'\nPAUSE: 'P'\n" + 
+    "QUIT: 'Q'", width/2, height/5+insetY);
+  text("PLAYER 2\nFORWARD: 'UP'\nREVERSE: 'DOWN'\nROTATE LEFT: 'LEFT'\nROTATE " + 
+    "RIGHT: 'RIGHT'\nFIRE: 'ENTER'", width/2, height-height/6);
 }
 
 /******************************************************************************
@@ -908,7 +912,7 @@ void keyPressed() {
 
       loop();
     }
-  // Unpausing 
+  /* Unpausing 
   if (keyPressed == true)
     if (looping) {
 
@@ -918,7 +922,7 @@ void keyPressed() {
 
       noLoop();
     }
-  // Shopping
+  */ //Shopping
   if ( key == 'B' && testStartGame == true ) {
 
     shop.setShopping(true);

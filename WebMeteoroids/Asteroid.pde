@@ -27,7 +27,7 @@ class Asteroid {
   float direction;                //Asteroid direction variable.
   float radius;                   //Asteroid radius variable.
   float rotation;                 //Asteroid rotation value.
-  float rotate;                   //Asteroid rotation increment value.
+  float rotateInc;                   //Asteroid rotation increment value.
   float angle;                    //Asteroid angle variable.
   int hit;                        //Asteroid collision count.
   int resize = 10;                //Variable to adjust sizes.
@@ -50,6 +50,7 @@ class Asteroid {
    
   ****************************************************************************/
  Asteroid(float radius, float astX, float astY, int hit, ArrayList<Bullet> bullet) {
+    
 
     this.radius = radius;
     this.position = new PVector (astX,astY);                 //New position vector.
@@ -77,7 +78,7 @@ class Asteroid {
     imageMode(CENTER);
     tint(colour);
     translate(position.x, position.y);    
-    rotate(rotate+= rotation);                //Rotation of the image.
+
     asteroidImg.resize(((int)radius + resize) * 2, ((int)radius + resize) * 2);
     image(asteroidImg, 0, 0); 
     popMatrix();

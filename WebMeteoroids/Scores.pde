@@ -70,9 +70,9 @@ class Scores {
     
     float xInset = width/6;         //Variable to store background parameters.
     float yInset = height/18;
-    String scoreString = "%08d" + nf(score); 
-    String livesString = "Player 1";
-    String livesStringP2 = "Player 2 ";
+    String scoreString = nf(score); 
+    String livesString = "PLAYER 1";
+    String livesStringP2 = "PLAYER 2 ";
 
     //Draw ships to the screen to represent the number of lives - player 1.
     if (player.getLives() == 3) {
@@ -140,7 +140,7 @@ class Scores {
     if ((score >= shop.getSpreadPrice() && player.getSpreadUpgrade() == false) 
         || (score >= shop.getShipPrice() && player.getShipType() == 0)) {
         
-      text("Upgrade available - Press 'B'", width/2, height-yInset);
+      text("UPGRADE AVAILABLE - PRESS 'B'", width/2, height-yInset);
     }
   }
   /****************************************************************************

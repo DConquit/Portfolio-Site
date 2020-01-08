@@ -107,7 +107,7 @@ class HighScore {
     textSize(30);
     textAlign(CENTER);
     text("HIGH SCORES", width/2, 40);       //Title of screen.
-    text("To exit game press esc\nTo return to main screen press m", width/2, 
+    text("TO EXIT GAME PRESS 'ESC'\nTO RETURN TO MAIN MENU PRESS 'M'", width/2, 
       height - y*2);
     /* 
      This nested loop iterates through the top ten list of scores, the names 

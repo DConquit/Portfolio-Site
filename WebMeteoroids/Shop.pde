@@ -33,8 +33,8 @@ class Shop {
     shopping = false;
     spreadPrice = 750;
     shipPrice = 1500;
-    spreadString = "'G' Spread Gun: " + nf(spreadPrice) + " Points";
-    shipString = "'S' Advanced Ship: " + nf(shipPrice) + " Points";
+    spreadString = "'G' SPREAD GUN: " + nf(spreadPrice) + " POINTS";
+    shipString = "'S' ADVANCED SHIP: " + nf(shipPrice) + " POINTS";
   }
 
   /****************************************************************************
@@ -52,14 +52,14 @@ class Shop {
     textFont(font);
     textSize(32);
 
-    text("Welcome to the shop!", width/2, height/4);
+    text("WELCOME TO THE SHOP!", width/2, height/4);
     if (player.getShipType() == 0) {
       text(shipString, width/2, height/4 + itemSpacing);
     }
     if (player.getSpreadUpgrade() == false) {
       text(spreadString, width/2, height/4 + 2 * itemSpacing);
     }
-    text("'R' to return to game", width/2, height/4 + 4 * itemSpacing);
+    text("'R' TO RETURN TO GAME", width/2, height/4 + 4 * itemSpacing);
     shopControl();
   }
 
@@ -74,7 +74,7 @@ class Shop {
     int key = keyCode;
     if (key == 'S' && player.getShipType() == 0) {
       if (score.getScore() < shipPrice) {
-        text("Sorry, you don't have enough points", width/2, height/1.4);
+        text("SORRY, YOU DON'T HAVE ENOUGH POINTS", width/2, height/1.4);
       } else {
         player.upgrade();
         player2.upgrade();
@@ -84,7 +84,7 @@ class Shop {
     }
     if (key == 'G' && player.getSpreadUpgrade() == false) {
       if (score.getScore() < spreadPrice) {
-        text("Sorry, you don't have enough points", width/2, height/1.4);
+        text("SORRY, YOU DON'T HAVE ENOUGH POINTS", width/2, height/1.4);
       } else {
         player.upgradeGun();
         score.addScore(-spreadPrice);
