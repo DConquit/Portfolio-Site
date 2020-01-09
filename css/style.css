@@ -410,7 +410,7 @@ td {
 .menubar {
     bottom: 0;
     position: fixed;
-    height: 32px;
+    height: 24px;
     width: 100%;
     background-color: #cbc6c1;
     border-bottom-color: #2e222f;
@@ -418,15 +418,66 @@ td {
     border-left-color: white;
     border-right-color: #2e222f;
     border-width: 1px;
+    border-style: solid;
 }
 
+.menuicon {
+    float: left;
+    margin-top: 2px;
+    margin-left: 1px;
+}
 .menuiconbig {
+    float: left;
     display: none;
 }
 
+.menubutton {
+    float: left;
+    border: 1px solid white;
+    border-right-color: #625565;
+    border-bottom-color: #625565;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: 2px;
+    width: 20px;
+}
 
+.menubutton:hover {
+    background-color: #d9d7d5;
+}
 
+.taskbarbutton {
+    float: left;
+    border: 1px solid white;
+    border-right-color: #625565;
+    border-bottom-color: #625565;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: 2px;
+    width: 128px;
+    cursor: pointer;
+}
 
+.taskbarbutton:hover {
+    background-color: #d9d7d5;
+}
+
+.taskbaricon {
+    float: left;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.taskbariconbig {
+    float: left;
+    display: none;
+}
+
+.taskbarbutton p {
+    float: left;
+    margin-top: 2px;
+    margin-left: 4px;
+}
 
 
 /*
@@ -638,11 +689,53 @@ td {
             border: 2px solid #2e222f;
         }
 
-        .menubar {
-            height: 64px;
-        }
+
         .folderbackground {
             border-width: 2px;
+        }
+
+        /* TASKBAR */
+        .taskbaricon {
+            display: none;
+        }
+
+        .taskbariconbig {
+            display: block;
+            margin-top: 4px;
+            margin-left: 8px;
+        }
+
+        .menubar {
+            height: 48px;
+            border-width: 2px;
+        }
+
+        .menuiconbig {
+            margin-top: 4px;
+            margin-left: 2px;
+        }
+
+        .menubutton {
+            border-width: 2px;
+            height: 40px;
+            margin-top: 2px;
+            margin-left: 4px;
+            width: 40px;
+        }
+
+        .taskbarbutton {
+            border-width: 2px;
+            height: 40px;
+            margin-top: 2px;
+            margin-left: 4px;
+            width: 256px;
+        }
+
+
+        .taskbarbutton p {
+            float: left;
+            margin-top: 4px;
+            margin-left: 8px;
         }
     }
 }

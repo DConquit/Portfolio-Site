@@ -17,17 +17,17 @@
 
 <!-- DESKTOP -->
 <div class="desktop" id="desktop">
-    <div class="deskobject" id="aboutme">
+    <div class="deskobject aboutactive" id="aboutme">
         <img src="img/aboutme.png" class="deskicon" alt="aboutme">
         <img src="img/aboutmebig.png" class="deskiconbig" alt="aboutme">
         <p>About Me</p>
     </div>
-    <div class="deskobject" id="resume">
+    <div class="deskobject resumeactive" id="resume">
         <img src="img/resume.png" class="deskicon" alt="resume">
         <img src="img/resumebig.png" class="deskiconbig" alt="resume">
         <p>Résumé</p>
     </div>
-    <div class="deskobject" id="projectfolder">
+    <div class="deskobject projectsactive" id="projectfolder">
         <img src="img/folder.png" class="deskicon" alt="projectfolder">
         <img src="img/folderbig.png" class="deskiconbig" alt="projectfolder">
         <p>Projects</p>
@@ -42,7 +42,7 @@
         <img src="img/githubbig.png" class="deskiconbig" alt="github">
         <p>GitHub</p>
     </div>
-    <div class="deskobject" id="settings">
+    <div class="deskobject settingsactive" id="settings">
         <img src="img/settings.png" class="deskicon" alt="settings">
         <img src="img/settingsbig.png" class="deskiconbig" alt="settings">
         <p>Settings</p>
@@ -89,7 +89,7 @@
 <!-- RESUME WINDOW -->
 <div class="window hidden" id="resumeexplorer">
     <header>
-        <h1><img class="windowicon" src="img/resumewinicon.png" alt="resumeicon"><img class="largewindowicon" src="img/resumewiniconbig.png" alt="resumeiconbig">Resume<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+        <h1><img class="windowicon" src="img/resumewinicon.png" alt="resumeicon"><img class="largewindowicon" src="img/resumewiniconbig.png" alt="resumeiconbig">Résumé<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
     </header>
     <div class="windowcontents">
         <div class="greybackground">
@@ -150,7 +150,7 @@
                     </table>
                 </div>
                 <div class="projectcontents">
-                    <div class="folderobject" id="meteoroids">
+                    <div class="folderobject meteoractive" id="meteoroids">
                         <img src="img/meteoroids.png" class="deskicon" alt="meteoroids">
                         <img src="img/meteoroidsbig.png" class="deskiconbig" alt="meteoroids">
                         <p>Meteoroids</p>
@@ -186,10 +186,16 @@
 </div>
 
 
-
+<!-- TASKBAR -->
 <div class="menubar">
-    <img src="img/menu.png" alt="menubutton" class="menuicon">
-    <img src="img/menubig.png" alt="menubutton" class="menuiconbig">
+    <div class="menubutton" id="menubutton"><img src="img/menu.png" alt="menubutton" class="menuicon"><img src="img/menubig.png" alt="menubutton" class="menuiconbig"></div>
+
+
+    <div class="taskbarbutton aboutactive hidden" id="aboutmetaskbar"><img src="img/charwin.png" alt="aboutmeicon" class="taskbaricon"><img src="img/charwinbig.png" alt="aboutmeicon" class="taskbariconbig"><p>About Me</p></div>
+    <div class="taskbarbutton resumeactive hidden" id="resumetaskbar"><img src="img/resumewinicon.png" alt="resumeicon" class="taskbaricon"><img src="img/resumewiniconbig.png" alt="resumeicon" class="taskbariconbig"><p>Résumé</p></div>
+    <div class="taskbarbutton projectsactive hidden" id="projectstaskbar"><img src="img/projectswinicon.png" alt="projectsicon" class="taskbaricon"><img src="img/projectswiniconbig.png" alt="projectsicon" class="taskbariconbig"><p>Projects</p></div>
+    <div class="taskbarbutton meteoractive hidden" id="meteoroidstaskbar"><img src="img/meteorwinicon.png" alt="meteoricon" class="taskbaricon"><img src="img/meteorwiniconbig.png" alt="meteoricon" class="taskbariconbig"><p>Meteoroids</p></div>
+    <div class="taskbarbutton settingsactive hidden" id="settingstaskbar"><img src="img/settingswinicon.png" alt="settingsicon" class="taskbaricon"><img src="img/settingswiniconbig.png" alt="settingsicon" class="taskbariconbig"><p>Settings</p></div>
 </div>
 </body>
 </html>
