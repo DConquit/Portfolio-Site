@@ -43,10 +43,7 @@ h3 {
 .deskobject {
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
-    margin-top: 16px;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-bottom: 16px;
+    margin: 16px;
     width: 64px;
     align-content: center;
     text-align: center;
@@ -118,6 +115,11 @@ header img {
 }
 .windowcontrol {
     padding-top: 2px;
+    background-color: #d9d7d5;
+    height: 16px;
+    width: 16px;
+    margin-right: 2px;
+    margin-top: 1px;
 }
 /* Disables large window control icons when resolution is too low */
 .largewindowcontrol {

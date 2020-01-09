@@ -19,32 +19,32 @@
 <div class="desktop" id="desktop">
     <div class="deskobject aboutactive" id="aboutme">
         <img src="img/aboutme.png" class="deskicon" alt="aboutme">
-        <img src="img/aboutmebig.png" class="deskiconbig" alt="aboutme">
+        <img src="img/aboutmebig.png" class="deskiconbig big" alt="aboutme">
         <p>About Me</p>
     </div>
     <div class="deskobject resumeactive" id="resume">
         <img src="img/resume.png" class="deskicon" alt="resume">
-        <img src="img/resumebig.png" class="deskiconbig" alt="resume">
+        <img src="img/resumebig.png" class="deskiconbig big" alt="resume">
         <p>Résumé</p>
     </div>
     <div class="deskobject projectsactive" id="projectfolder">
         <img src="img/folder.png" class="deskicon" alt="projectfolder">
-        <img src="img/folderbig.png" class="deskiconbig" alt="projectfolder">
+        <img src="img/folderbig.png" class="deskiconbig big" alt="projectfolder">
         <p>Projects</p>
     </div>
     <div class="deskobject" id="email">
         <img src="img/email.png" class="deskicon" alt="email">
-        <img src="img/emailbig.png" class="deskiconbig" alt="email">
+        <img src="img/emailbig.png" class="deskiconbig big" alt="email">
         <p>Email</p>
     </div>
     <div class="deskobject" id="github">
         <img src="img/github.png" class="deskicon" alt="github">
-        <img src="img/githubbig.png" class="deskiconbig" alt="github">
+        <img src="img/githubbig.png" class="deskiconbig big" alt="github">
         <p>GitHub</p>
     </div>
     <div class="deskobject settingsactive" id="settings">
         <img src="img/settings.png" class="deskicon" alt="settings">
-        <img src="img/settingsbig.png" class="deskiconbig" alt="settings">
+        <img src="img/settingsbig.png" class="deskiconbig big" alt="settings">
         <p>Settings</p>
     </div>
 </div>
@@ -53,7 +53,20 @@
 <!-- ABOUT ME WINDOW -->
 <div class="window hidden" id="personalinfo">
   <header>
-    <h1><img class="windowicon" src="img/charwin.png" alt="faceicon"><img class="largewindowicon" src="img/charwinbig.png" alt="faceicon">About Me<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+      <h1>
+          <img class="windowicon" src="img/charwin.png" alt="faceicon">
+          <img class="largewindowicon big" src="img/charwinbig.png" alt="faceicon">
+          About Me
+          <div id="closeabout" class="windowcontrol">
+              <img class="wincontrolicon" src="img/close.png" alt="closeicon">
+              <img class="wincontroliconbig big" src="img/closebig.png" alt="closeicon">
+          </div>
+          <div class="windowcontrol">
+              <img class="wincontrolicon" src="img/minimise.png" alt="minimiseicon">
+              <img class="wincontroliconbig big" src="img/minimisebig.png" alt="minimiseicon">
+          </div>
+
+      </h1>
   </header>
   <div class="windowcontents">
     <div class="portrait">
@@ -89,7 +102,15 @@
 <!-- RESUME WINDOW -->
 <div class="window hidden" id="resumeexplorer">
     <header>
-        <h1><img class="windowicon" src="img/resumewinicon.png" alt="resumeicon"><img class="largewindowicon" src="img/resumewiniconbig.png" alt="resumeiconbig">Résumé<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+        <h1>
+            <img class="windowicon" src="img/resumewinicon.png" alt="resumeicon">
+            <img class="largewindowicon" src="img/resumewiniconbig.png" alt="resumeiconbig">
+            Résumé
+            <img class="windowcontrol" src="img/close.png" alt="closebutton">
+            <img class="largewindowcontrol" src="img/closebig.png" alt="closebutton">
+            <img class="windowcontrol" src="img/minimise.png" alt="minimiseicon">
+            <img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon">
+        </h1>
     </header>
     <div class="windowcontents">
         <div class="greybackground">
@@ -121,7 +142,15 @@
 <!-- PROJECTS WINDOW -->
 <div class="window hidden" id="projectswindow">
     <header>
-        <h1><img class="windowicon" src="img/projectswinicon.png" alt="projectsicon"><img class="largewindowicon" src="img/projectswiniconbig.png" alt="projectsiconbig">Projects<img class="windowcontrol" src="img/close.png" alt="closebutton"><img class="largewindowcontrol" src="img/closebig.png" alt="closebutton"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+        <h1>
+            <img class="windowicon" src="img/projectswinicon.png" alt="projectsicon">
+            <img class="largewindowicon" src="img/projectswiniconbig.png" alt="projectsiconbig">
+            Projects
+            <img class="windowcontrol" src="img/close.png" alt="closebutton">
+            <img class="largewindowcontrol" src="img/closebig.png" alt="closebutton">
+            <img class="windowcontrol" src="img/minimise.png" alt="minimiseicon">
+            <img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon">
+        </h1>
     </header>
     <div class="windowcontents">
         <div class="folderbackground">
@@ -170,7 +199,15 @@
 <!-- SETTINGS WINDOW -->
 <div class="window hidden" id="settingswindow">
     <header>
-        <h1><img class="windowicon" src="img/settingswinicon.png" alt="settingsicon"><img class="largewindowicon" src="img/settingswiniconbig.png" alt="settingsicon">Settings<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+        <h1>
+            <img class="windowicon" src="img/settingswinicon.png" alt="settingsicon">
+            <img class="largewindowicon" src="img/settingswiniconbig.png" alt="settingsicon">
+            Settings
+            <img class="windowcontrol" src="img/close.png" alt="closeicon">
+            <img class="largewindowcontrol" src="img/closebig.png" alt="closeicon">
+            <img class="windowcontrol" src="img/minimise.png" alt="minimiseicon">
+            <img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon">
+        </h1>
     </header>
 </div>
 
@@ -178,7 +215,15 @@
 <!-- METEOROIDS WINDOW -->
 <div class="window hidden" id="meteoroidswindow">
     <header>
-        <h1><img class="windowicon" src="img/meteorwinicon.png" alt="meteorwinicon"><img class="largewindowicon" src="img/meteorwiniconbig.png" alt="meteorwinicon">Meteoroids<img class="windowcontrol" src="img/close.png" alt="closeicon"><img class="largewindowcontrol" src="img/closebig.png" alt="closeicon"><img class="windowcontrol" src="img/minimise.png" alt="minimiseicon"><img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon"></h1>
+        <h1>
+            <img class="windowicon" src="img/meteorwinicon.png" alt="meteorwinicon">
+            <img class="largewindowicon" src="img/meteorwiniconbig.png" alt="meteorwinicon">
+            Meteoroids
+            <img class="windowcontrol" src="img/close.png" alt="closeicon">
+            <img class="largewindowcontrol" src="img/closebig.png" alt="closeicon">
+            <img class="windowcontrol" src="img/minimise.png" alt="minimiseicon">
+            <img class="largewindowcontrol" src="img/minimisebig.png" alt="minimiseicon">
+        </h1>
     </header>
     <div class="windowcontents">
         <canvas data-processing-sources="WebMeteoroids/WebMeteoroids.pde WebMeteoroids/Asteroid.pde WebMeteoroids/Bullet.pde WebMeteoroids/Highscores.pde WebMeteoroids/Scores.pde WebMeteoroids/Ship.pde WebMeteoroids/Shop.pde" ></canvas>
@@ -188,14 +233,37 @@
 
 <!-- TASKBAR -->
 <div class="menubar">
-    <div class="menubutton" id="menubutton"><img src="img/menu.png" alt="menubutton" class="menuicon"><img src="img/menubig.png" alt="menubutton" class="menuiconbig"></div>
+    <div class="menubutton" id="menubutton">
+        <img src="img/menu.png" alt="menubutton" class="menuicon">
+        <img src="img/menubig.png" alt="menubutton" class="menuiconbig">
+    </div>
 
 
-    <div class="taskbarbutton aboutactive hidden" id="aboutmetaskbar"><img src="img/charwin.png" alt="aboutmeicon" class="taskbaricon"><img src="img/charwinbig.png" alt="aboutmeicon" class="taskbariconbig"><p>About Me</p></div>
-    <div class="taskbarbutton resumeactive hidden" id="resumetaskbar"><img src="img/resumewinicon.png" alt="resumeicon" class="taskbaricon"><img src="img/resumewiniconbig.png" alt="resumeicon" class="taskbariconbig"><p>Résumé</p></div>
-    <div class="taskbarbutton projectsactive hidden" id="projectstaskbar"><img src="img/projectswinicon.png" alt="projectsicon" class="taskbaricon"><img src="img/projectswiniconbig.png" alt="projectsicon" class="taskbariconbig"><p>Projects</p></div>
-    <div class="taskbarbutton meteoractive hidden" id="meteoroidstaskbar"><img src="img/meteorwinicon.png" alt="meteoricon" class="taskbaricon"><img src="img/meteorwiniconbig.png" alt="meteoricon" class="taskbariconbig"><p>Meteoroids</p></div>
-    <div class="taskbarbutton settingsactive hidden" id="settingstaskbar"><img src="img/settingswinicon.png" alt="settingsicon" class="taskbaricon"><img src="img/settingswiniconbig.png" alt="settingsicon" class="taskbariconbig"><p>Settings</p></div>
+    <div class="taskbarbutton aboutactive hidden" id="aboutmetaskbar">
+        <img src="img/charwin.png" alt="aboutmeicon" class="taskbaricon">
+        <img src="img/charwinbig.png" alt="aboutmeicon" class="taskbariconbig">
+        <p>About Me</p>
+    </div>
+    <div class="taskbarbutton resumeactive hidden" id="resumetaskbar">
+        <img src="img/resumewinicon.png" alt="resumeicon" class="taskbaricon">
+        <img src="img/resumewiniconbig.png" alt="resumeicon" class="taskbariconbig">
+        <p>Résumé</p>
+    </div>
+    <div class="taskbarbutton projectsactive hidden" id="projectstaskbar">
+        <img src="img/projectswinicon.png" alt="projectsicon" class="taskbaricon">
+        <img src="img/projectswiniconbig.png" alt="projectsicon" class="taskbariconbig">
+        <p>Projects</p>
+    </div>
+    <div class="taskbarbutton meteoractive hidden" id="meteoroidstaskbar">
+        <img src="img/meteorwinicon.png" alt="meteoricon" class="taskbaricon">
+        <img src="img/meteorwiniconbig.png" alt="meteoricon" class="taskbariconbig">
+        <p>Meteoroids</p>
+    </div>
+    <div class="taskbarbutton settingsactive hidden" id="settingstaskbar">
+        <img src="img/settingswinicon.png" alt="settingsicon" class="taskbaricon">
+        <img src="img/settingswiniconbig.png" alt="settingsicon" class="taskbariconbig">
+        <p>Settings</p>
+    </div>
 </div>
 </body>
 </html>
